@@ -1,0 +1,15 @@
+594,León XIII 12,GGG&G,imagen.png,Audio.mp3,Video.mp4
+196,Gran Vía 77,Deloria Editores,imagen.png,Audio.mp3,Video.mp4
+221,Espronceda 11,Larrosa Mas S.L.,imagen.png,Audio.mp3,Video.mp4
+163,Sants Metges 2,McCoy Hill,imagen.png,Audio.mp3,Video.mp4
+306,Alfonso Paso 3,Ediciones Ibérica,imagen.png,Audio.mp3,Video.mp4
+480,San Andrés 21,Publicaciones Abreu,imagen.png,Audio.mp3,Video.mp4
+219,Carlos III 43,Grisham Publishing,imagen.png,Audio.mp3,Video.mp4
+273,Fuensanta 3,TechiBooks,imagen.png,Audio.mp3,Video.mp4
+636,Plaza Luceros 4,Ediciones Castell S.A.,imagen.png,Audio.mp3,Video.mp4
+750,Mesa y López 51,Alfaguara,imagen.png,Audio.mp3,Video.mp4
+825,Pío Baroja 23,S.M.,imagen.png,Audio.mp3,Video.mp4
+1125,Jaime I 65,Plaza & Janés,imagen.png,Audio.mp3,Video.mp4
+406,El Cid 45,Caralt,imagen.png,Audio.mp3,Video.mp4
+120,GranNIcolas Vía 71,Andina,imagen.png,Audio.mp3,Video.mp4
+186,Av. Escaleritas 12,Anaya,imagen.png,Audio.mp3,Video.mp4
