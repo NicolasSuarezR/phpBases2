@@ -1,6 +1,5 @@
 <?php
 
-
 $txtCodEditorial = (isset($_POST['txtCodEditorial']))?$_POST['txtCodEditorial']:"";
 $txtDireccion = (isset($_POST['txtDireccion']))?$_POST['txtDireccion']:"";
 $txtNombre = (isset($_POST['txtNombre']))?$_POST['txtNombre']:"";
@@ -42,11 +41,7 @@ switch ($accion) {
 			move_uploaded_file($tmpVideo, "Video/".$nombreArchivo2);
 		}
 
-
-
 		$sentencia="INSERT INTO editoriales(CodEditorial,Direccion,Nombre,Imagen,Audio,Video) VALUES ('$txtCodEditorial','$txtDireccion','$txtNombre','$nombreArchivo','$nombreArchivo1','$nombreArchivo2') ";
-
-
 
 		$ejecutar = sqlsrv_query($conn,$sentencia);
 		break;
@@ -58,7 +53,6 @@ switch ($accion) {
 		WHERE  CodEditorial = '$txtCodEditorial'";
 
 		$ejecutar = sqlsrv_query($conn,$sentencia);
-
 
 		$Fecha =  new DateTime();
 		$nombreArchivo = ($txtImagen!="")?$Fecha->getTimestamp()."_".$_FILES["txtImagen"]["name"]:"imagen.jpg";
@@ -153,8 +147,6 @@ switch ($accion) {
 		break;
 }
 
-
-
 $listae = array();
 $sentencia= "SELECT * FROM 	editoriales";
 $stmt = sqlsrv_query($conn,$sentencia);
@@ -175,12 +167,6 @@ while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
 
 sqlsrv_free_stmt($stmt);
 //print_r( $listae);
-
-
-
-
-
-
 
 
 ?>
@@ -298,16 +284,12 @@ sqlsrv_free_stmt($stmt);
 								<input type="hidden" name="txtAudio" value="<?php echo $editorial['Video']; ?>">
 								<input type="submit" name= "accion" value="Seleccionar" class="btn btn-outline-primary btn-lg">
 								<button value="btnEliminar" type="submit" name="accion" class="btn btn-outline-primary btn-lg">Eliminar</button></td>
-
 							</form>
-
-
 						</td>
 					</tr>
 				<?php } ?>
 				</table>
 			</div>
-
 		</div>
 	</body>
 </html>
