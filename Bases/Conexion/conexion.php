@@ -1,5 +1,5 @@
 <?php
-$serverName = "PAVILION-GAMING\SQLEXPRESS"; //serverName\instanceName
+$serverName = "PAVILION-GAMING"; //serverName\instanceName
 
 // Puesto que no se han especificado UID ni PWD en el array  $connectionInfo,
 // La conexión se intentará utilizando la autenticación Windows.
