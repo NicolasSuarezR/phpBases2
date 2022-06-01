@@ -2,25 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
 	<link rel="icon" type="image/png" href="assets/img/favicon.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-	<title>Login Page - Material Kit PRO by Creative Tim</title>
-
+	<title>Inicio de sesión</title>
 	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
-
 	<!--     Fonts and icons     -->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
 	<!-- CSS Files -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/material-kit.css?v=1.2.1" rel="stylesheet"/>
+    <link href="stylesheet.css" rel="stylesheet">
 </head>
 
 <body class="login-page">
 	<nav class="navbar navbar-primary navbar-transparent navbar-absolute">
     	<div class="container">
-        	<!-- Brand and toggle get grouped for better mobile display -->
+        	<!-- Cuando se pone en modo mobile, se cambia el navbar por iconos de rayitas -->
         	<div class="navbar-header">
         		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
             		<span class="sr-only">Toggle navigation</span>
@@ -28,17 +25,11 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
         		</button>
-        		<a class="navbar-brand" href="#">Material Kit PRO</a>
+        		<a class="navbar-brand" href="#">Productos BD</a>
         	</div>
 
         	<div class="collpase navbar-collapse">
         		<ul class="nav navbar-nav navbar-right">
-    				<li>
-    					<a href="#">
-    						<i class="material-icons">apps</i> Components
-    					</a>
-    				</li>
-
     				<li class="dropdown">
     					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
     						<i class="material-icons">view_day</i> Sections
@@ -107,55 +98,36 @@
     	</div>
     </nav>
 
-	<div class="page-header header-filter" style="background-image: url('assets/img/bg7.jpg'); background-size: cover; background-position: top center;">
+	<div class="page-header header-filter">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
 					<div class="card card-signup">
 						<form class="form">
 							<div class="header header-primary text-center">
-								<h4 class="card-title">Log in</h4>
-								<div class="social-line">
-									<a href="#" class="btn btn-just-icon btn-simple">
-										<i class="fa fa-facebook-square"></i>
-									</a>
-									<a href="#" class="btn btn-just-icon btn-simple">
-										<i class="fa fa-twitter"></i>
-									</a>
-									<a href="#" class="btn btn-just-icon btn-simple">
-										<i class="fa fa-google-plus"></i>
-									</a>
-								</div>
+								<h3 class="card-title">Inicio de sesión</h3>
 							</div>
-							<p class="description text-center">Or Be Classical</p>
+							<p class="description text-center">Ingresa tus datos</p>
 							<div class="card-content">
-
 								<div class="input-group">
-									<span class="input-group-addon">
-										<i class="material-icons">face</i>
-									</span>
-                                    <label for="idFirstName"></label>
-									<input type="text" class="form-control" id="idFirstName" placeholder="First Name...">
-								</div>
-
-								<div class="input-group">
-									<span class="input-group-addon">
+                                    <label for="idEmail"></label>
+                                    <span class="input-group-addon">
 										<i class="material-icons">email</i>
 									</span>
-                                    <label for="idEmail"> Email </label>
-									<input type="text" class="form-control" id="idEmail" placeholder="Email...">
+									<input type="text" class="form-control" id="idEmail" placeholder="Email (user)">
 								</div>
-
 								<div class="input-group">
-									<span class="input-group-addon">
-										<i class="material-icons">lock_outline</i>
-									</span>
                                     <label for="idPass"></label>
-									<input type="password" id="idPass" placeholder="Password..." class="form-control" />
+									<span class="input-group-addon">
+										<i class="material-icons">password</i>
+									</span>
+									<input type="password" id="idPass" placeholder="Contraseña" class="form-control" />
 								</div>
 							</div>
 							<div class="footer text-center">
-								<a href="#" class="btn btn-primary btn-simple btn-wd btn-lg">Get Started</a>
+                                <a href="#" class="btn btn-primary btn-simple btn-wd btn-lg">¿Olvido su contraseña?</a>
+                                <hr>
+                                <span>¿No tiene cuenta? <a href="#" class="btn btn-primary btn-simple btn-wd btn-lg">Registrarse</a></span>
 							</div>
 						</form>
 					</div>
@@ -167,29 +139,22 @@
 	            <nav class="pull-left">
 					<ul>
 						<li>
-							<a href="http://www.creative-tim.com">
-								Creative Tim
+							<a href="https://github.com/Werffios">
+								Visitenos en GITHUB
 							</a>
 						</li>
 						<li>
-							<a href="http://presentation.creative-tim.com">
-							   About Us
-							</a>
-						</li>
-						<li>
-							<a href="http://blog.creative-tim.com">
-							   Blog
-							</a>
-						</li>
-						<li>
-							<a href="http://www.creative-tim.com/license">
-								Licenses
+							<a href="http://unal.edu.co">
+							   Acerca de nosotros
 							</a>
 						</li>
 					</ul>
 	            </nav>
 	            <div class="copyright pull-right">
-	                &copy; <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by <a href="http://www.creative-tim.com" target="_blank">Creative Tim</a>
+                    <label>
+	                &copy; <script>document.write(new Date().getFullYear())</script>
+                    , made with <i class="material-icons">favorite</i> by Nicolás Suárez
+                    </label>
 	            </div>
 	        </div>
 	    </footer>
