@@ -23,7 +23,6 @@ function DatosSQL() //: array
 
     $i = 0;
     while( $row = sqlsrv_fetch_array( $stmt, SQLSRV_FETCH_ASSOC) ) {
-        $consultaSQL[$i]["ProductID"] = $row['ProductID'];
         $consultaSQL[$i]["ProductName"] = $row['ProductName'];
         $consultaSQL[$i]["Price"] = $row['Price'];
         $consultaSQL[$i]["ProductDescription"] = $row['ProductDescription'];
