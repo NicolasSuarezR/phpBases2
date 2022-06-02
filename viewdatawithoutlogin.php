@@ -58,6 +58,7 @@
                             <!-- <th class="text-right">Action</th> -->
                         </tr>
                     </thead>
+                    <?php foreach($DatosSQL as $producto){ ?>
                     <tbody>
 
                         <!-- <tr>
@@ -75,17 +76,17 @@
                         <tr>
                             <td>
                                 <div class="img-container ">
-                                    <img src="Imagenes/1.png" alt="ImagenProducto">
+                                    <img src="Imagenes/<?php echo $producto['Imagen']?>" alt="ImagenProducto">
                                 </div>
                             </td>
-                            <td class="td-name">
-                                <a href="#">Spring Jacket</a>
+                            <td>
+                                <?php echo $producto['ProductName']?>
                             </td>
                             <td>
-                                Description of product
+                                <?php echo $producto['ProductDescription']?>
                             </td>
                             <td>
-                                <small>&euro;</small>549
+                                &dollar; <?php echo $producto['Price']?>
                             </td>
                             <td>
                                 <div class="rotating-card-container manual-flip">
@@ -96,8 +97,7 @@
                                                     <i class="material-icons">audiotrack</i> Audio
                                                 </h5>
                                                 <audio style="margin: 0 auto; width: 210px;" controls>
-                                                    <!-- <source src="Audio/<?php  //echo $editorial['Audio'] ?>" type="audio/mpeg"> -->
-                                                    <source src="Audio/Audio.mp3" type="audio/mpeg">
+                                                    <source src="Audio/<?php  echo $producto['Audio'] ?>" type="audio/mpeg">
 
                                                 </audio>
                                                 <div class="footer text-center">
@@ -114,7 +114,7 @@
                                                     <i class="material-icons">movie</i> Video
                                                 </h5>
                                                 <video style="margin: 0 auto;" width="240" height="135" controls>
-                                                    <source src="Video/Video.mp4" type="video/mp4">
+                                                    <source src="Video/<?php  echo $producto['Video'] ?>" type="video/mp4">
                                                 </video>
                                                 <div class="footer text-center">
                                                     <button type="button" name="button" class="btn btn-success btn-fill btn-round btn-rotate btn-xs">
@@ -141,6 +141,7 @@
                                 </button>
                             </td> -->
                         </tr>
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>
