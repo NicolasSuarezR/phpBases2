@@ -8,7 +8,7 @@ $connectionInfo = array( "Database"=>"biblio", "CharacterSet" => "UTF-8");
 
 ?>
 <!doctype html>
-<html lang="en">
+<html lang="es-CO">
 <head>
 	<meta charset="utf-8" />
 	<link rel="icon" type="image/png" href="assets/img/favicon.png">
