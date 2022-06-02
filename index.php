@@ -1,3 +1,12 @@
+<?php
+include ('Conexion/conexion.php');
+$serverName = "PAVILION-GAMING"; //serverName\instanceName
+
+// Puesto que no se han especificado UID ni PWD en el array  $connectionInfo,
+// La conexión se intentará utilizando la autenticación Windows.
+$connectionInfo = array( "Database"=>"biblio", "CharacterSet" => "UTF-8");
+
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -31,68 +40,10 @@
         	<div class="collpase navbar-collapse">
         		<ul class="nav navbar-nav navbar-right">
     				<li class="dropdown">
-    					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-    						<i class="material-icons">view_day</i> Sections
-    						<b class="caret"></b>
+    					<a href="viewdatawithoutlogin.php" class="btn btn-primary btn-round">
+    						<i class="material-icons">leaderboard</i> Ver datos
     					</a>
-    					<ul class="dropdown-menu dropdown-with-icons">
-    						<li>
-    							<a href="#">
-    								<i class="material-icons">dns</i> Headers
-    							</a>
-    						</li>
-    						<li>
-    							<a href="#">
-    								<i class="material-icons">build</i> Features
-    							</a>
-    						</li>
-    						<li>
-    							<a href="#">
-    								<i class="material-icons">list</i> Blogs
-    							</a>
-    						</li>
-    						<li>
-    							<a href="#">
-    								<i class="material-icons">people</i> Teams
-    							</a>
-    						</li>
-    						<li>
-    							<a href="#">
-    								<i class="material-icons">assignment</i> Projects
-    							</a>
-    						</li>
-    						<li>
-    							<a href="#">
-    								<i class="material-icons">monetization_on</i> Pricing
-    							</a>
-    						</li>
-
-    					</ul>
-    				</li>
-
-    				<li class="dropdown">
-    					<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-    						<i class="material-icons">view_carousel</i> Examples
-    						<b class="caret"></b>
-    					</a>
-    					<ul class="dropdown-menu dropdown-with-icons">
-                            <li>
-    							<a href="#">
-    								<i class="material-icons">art_track</i> Blog Post
-    							</a>
-    						</li>
-    						<li>
-    							<a href="#">
-    								<i class="material-icons">location_on</i> Contact Us
-    							</a>
-    						</li>
-    						<li>
-    							<a href="#">
-    								<i class="material-icons">view_day</i> Landing Page
-    							</a>
-    						</li>
-    					</ul>
-    				</li>
+                    </li>
         		</ul>
         	</div>
     	</div>
@@ -103,29 +54,31 @@
 			<div class="row">
 				<div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
 					<div class="card card-signup">
-						<form class="form">
+						<form class="form" method="post" action="controller.php">
 							<div class="header header-primary text-center">
 								<h3 class="card-title">Inicio de sesión</h3>
 							</div>
 							<p class="description text-center">Ingresa tus datos</p>
+
 							<div class="card-content">
 								<div class="input-group">
                                     <label for="idEmail"></label>
                                     <span class="input-group-addon">
 										<i class="material-icons">email</i>
 									</span>
-									<input type="text" class="form-control" id="idEmail" placeholder="Email (user)">
+									<input type="text" name="txtUsuario" class="form-control" id="idEmail" placeholder="Email (user)">
 								</div>
 								<div class="input-group">
                                     <label for="idPass"></label>
 									<span class="input-group-addon">
 										<i class="material-icons">password</i>
 									</span>
-									<input type="password" id="idPass" placeholder="Contraseña" class="form-control" />
+									<input type="password" name="txtClave" id="idPass" placeholder="Contraseña" class="form-control" />
 								</div>
 							</div>
 							<div class="footer text-center">
-                                <a href="#" class="btn btn-primary btn-simple btn-wd btn-lg">¿Olvido su contraseña?</a>
+                                <input type="submit" value="Ingresar" class="btn btn-primary btn-simple btn-lg">
+                                <a href="#" class="btn btn-primary btn-simple btn-wd">¿Olvido su contraseña?</a>
                                 <hr>
                                 <span>¿No tiene cuenta? <a href="#" class="btn btn-primary btn-simple btn-wd btn-lg">Registrarse</a></span>
 							</div>
@@ -140,7 +93,7 @@
 					<ul>
 						<li>
 							<a href="https://github.com/Werffios">
-								Visitenos en GITHUB
+								Visitanos en GITHUB
 							</a>
 						</li>
 						<li>

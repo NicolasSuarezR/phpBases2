@@ -5,12 +5,9 @@ $serverName = "PAVILION-GAMING"; //serverName\instanceName
 // La conexión se intentará utilizando la autenticación Windows.
 $connectionInfo = array( "Database"=>"biblio", "CharacterSet" => "UTF-8");
 $conn = sqlsrv_connect( $serverName, $connectionInfo);
-
 if ( $conn ) {
-    echo "";//"Conexion Correcta SQL <br />";
+    return true;
 }else{
     echo "Conexión no se pudo establecer.<br />";
     die( print_r( sqlsrv_errors(), true));
-}
-
-?>
+}?>
