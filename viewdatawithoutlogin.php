@@ -1,5 +1,5 @@
 <?php
-    include ("funtions.php");
+    include("functions.php");
 
     $DatosSQL = DatosSQL();
 ?>
@@ -21,7 +21,7 @@
 <body class="login-page"">
     <nav class="navbar navbar-primary navbar-transparent navbar-absolute">
         <div class="container">
-            <!-- Cuando se pone en modo mobile, se cambia el navbar por iconos de rayitas -->
+            <!-- Cuando se pone en modo mobile, se cambia el navbar por iconos de rayas -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example">
                     <span class="sr-only">Toggle navigation</span>
@@ -32,7 +32,7 @@
                 <a class="navbar-brand" href="#">Productos BD</a>
             </div>
 
-            <div class="collpase navbar-collapse">
+            <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="dropdown">
                         <a href="index.php" class="btn btn-primary btn-round">
@@ -76,7 +76,7 @@
                         <tr>
                             <td>
                                 <div class="img-container ">
-                                    <img src="Imagenes/<?php echo $producto['Imagen']?>" alt="ImagenProducto">
+                                    <img src="Images/<?php echo $producto['Imagen']?>" alt="ImagenProducto">
                                 </div>
                             </td>
                             <td>
@@ -156,7 +156,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://unal.edu.co">
+                            <a href="https://unal.edu.co">
                                 Acerca de nosotros
                             </a>
                         </li>
@@ -164,14 +164,13 @@
                 </nav>
                 <div class="copyright pull-right">
                     <label>
-                        &copy; <script>document.write(new Date().getFullYear())</script>
+                        &copy; <script>document.write(new Date().getFullYear().toString())</script>
                         , made with <i class="material-icons">favorite</i> by Nicolás Suárez
                     </label>
                 </div>
             </div>
         </footer>
     </div>
-
 <script src="assets/js/jquery.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="assets/js/material.min.js"></script>
@@ -179,19 +178,19 @@
 <!--    Plugin for Date Time Picker and Full Calendar Plugin   -->
 <script src="assets/js/moment.min.js"></script>
 
-<!--	Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/   -->
+<!--	Plugin for the Sliders, full documentation here: https://refreshless.com/nouislider/   -->
 <script src="assets/js/nouislider.min.js" type="text/javascript"></script>
 
 <!--	Plugin for the Datepicker, full documentation here: https://github.com/Eonasdan/bootstrap-datetimepicker   -->
 <script src="assets/js/bootstrap-datetimepicker.js" type="text/javascript"></script>
 
-<!--	Plugin for Select, full documentation here: http://silviomoreto.github.io/bootstrap-select   -->
+<!--	Plugin for Select, full documentation here: https://silviomoreto.github.io/bootstrap-select   -->
 <script src="assets/js/bootstrap-selectpicker.js" type="text/javascript"></script>
 
-<!--	Plugin for Tags, full documentation here: http://xoxco.com/projects/code/tagsinput/   -->
+<!--	Plugin for Tags, full documentation here: https://xoxco.com/projects/code/tagsinput/   -->
 <script src="assets/js/bootstrap-tagsinput.js"></script>
 
-<!--	Plugin for Fileupload, full documentation here: http://www.jasny.net/bootstrap/javascript/#fileinput   -->
+<!--	Plugin for Fileupload, full documentation here: https://www.jasny.net/bootstrap/javascript/#fileinput   -->
 <script src="assets/js/jasny-bootstrap.min.js"></script>
 
 <!--    Plugin For Google Maps   -->

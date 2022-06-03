@@ -16,7 +16,7 @@ function DatosSQL() //: array
     $sentenciaSQL = "SELECT * FROM Products";
 
     $consultaSQL = array();
-    $stmt = sqlsrv_query($conn,$sentenciaSQL);  //ejecucion query
+    $stmt = sqlsrv_query($conn,$sentenciaSQL);  //ejecución query
 
 
     if( $stmt === false) {    die( print_r( sqlsrv_errors(), true) ); }

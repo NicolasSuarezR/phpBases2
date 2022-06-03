@@ -11,7 +11,7 @@
 
     if ($filaController>0)
     {
-        echo "<h1>Bienvenido<h1>";
+        header("refresh:1; url=viewdatawithlogin.php");
 
     }else{
         echo "<h1>Error</h1>";
