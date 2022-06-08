@@ -55,24 +55,10 @@
                             <th class="text-left">Description</th>
                             <th>Price</th>
                             <th class="text-center">Audio/Video</th>
-                            <!-- <th class="text-right">Action</th> -->
                         </tr>
                     </thead>
                     <?php foreach($DatosSQL as $producto){ ?>
                     <tbody>
-
-                        <!-- <tr>
-                            <td colspan="3">
-                            </td>
-                            <td class="td-total">
-                                Total
-                            </td>
-                            <td class="td-price">
-                                <small>&euro;</small>2,346
-                            </td>
-                            <td colspan="3" class="text-right"> <button type="button" class="btn btn-info btn-round btn-lg">Complete Purchase <i class="material-icons">keyboard_arrow_right</i></button></td>
-
-                        </tr> -->
                         <tr>
                             <td>
                                 <div class="img-container ">
@@ -113,7 +99,7 @@
                                                 <h5 class="category-social text-success text-center">
                                                     <i class="material-icons">movie</i> Video
                                                 </h5>
-                                                <video style="margin: 0 auto;" width="240" height="135" controls>
+                                                <video poster="Images/<?php echo $producto['Imagen']?>" height="135" controls>
                                                     <source src="Video/<?php  echo $producto['Video'] ?>" type="video/mp4">
                                                 </video>
                                                 <div class="footer text-center">

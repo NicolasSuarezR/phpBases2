@@ -60,26 +60,30 @@ $serverName = "PAVILION-GAMING"; //serverName\instanceName
 							<p class="description text-center">Ingresa tus datos</p>
 
 							<div class="card-content">
-								<div class="input-group">
-                                    <label for="idEmail"></label>
+                                <div class="input-group">
                                     <span class="input-group-addon">
 										<i class="material-icons">email</i>
 									</span>
-									<input type="text" name="txtUsuario" class="form-control" id="idEmail" placeholder="Email (user)" required>
-								</div>
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label" for="idEmail">Email</label>
+                                        <input type="text" name="txtUsuario" class="form-control" id="idEmail" required>
+                                    </div>
+                                </div>
 								<div class="input-group">
-                                    <label for="idPass"></label>
 									<span class="input-group-addon">
 										<i class="material-icons">password</i>
 									</span>
-									<input type="password" name="txtClave" id="idPass" placeholder="Contraseña" class="form-control" required/>
+                                    <div class="form-group label-floating is-empty">
+                                        <label class="control-label" for="idPass">Contraseña</label>
+									    <input type="password" name="txtClave" id="idPass" class="form-control" required/>
+                                    </div>
 								</div>
 							</div>
 							<div class="footer text-center">
                                 <input type="submit" value="Ingresar" class="btn btn-primary btn-simple btn-lg">
                                 <a href="#" class="btn btn-primary btn-simple btn-wd">¿Olvido su contraseña?</a>
                                 <hr>
-                                <span>¿No tiene cuenta? <a href="#" class="btn btn-primary btn-simple btn-wd btn-lg">Registrarse</a></span>
+                                <span>¿No tiene cuenta? <a href="register.php" class="btn btn-primary btn-simple btn-wd btn-lg">Registrarse</a></span>
 							</div>
 						</form>
 					</div>

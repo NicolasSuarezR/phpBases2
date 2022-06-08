@@ -1,14 +1,15 @@
 .page-header{
-    background: #0d47a1;
-    background-image: url('media/bg.png');
     background-size: cover;
-    background-position: top center;
+    background: #0d47a1 url('media/bg.png') top center;
 }
 .img-container{
     border-radius: 5px;
 }
-#labelvideo{
+#label-video{
     width: 20%;
     display: block;
     text-align: center;
+}
+video{
+    margin: auto;
 }
