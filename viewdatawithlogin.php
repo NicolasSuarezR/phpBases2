@@ -23,7 +23,7 @@ switch ($action) {
             die( print_r( sqlsrv_errors(), true));
         }
         $sentencia="INSERT INTO Products(ProductID, ProductName, Price, ProductDescription, Imagen, Audio, Video ) 
-                VALUES ('36', '$txtNombre', 45.2700, 'Desn', 't1', 't2', 't3') ";
+                VALUES ('3', '$txtNombre', 45.2700, 'Desn', 't1', 't2', 't3') ";
         $f = sqlsrv_query($conn,$sentencia);
         print_r($f);
 
@@ -101,7 +101,7 @@ switch ($action) {
                                     <span class="input-group-addon">
                                         <i class="material-icons">inventory</i>
                                     </span>
-                                    <input type="text" class="form-control" value="<?php echo $txtNombre;?>" placeholder="Nombre del producto">
+                                    <input type="text" name="txtNombre" class="form-control" value="<?php echo $txtNombre;?>" placeholder="Nombre del producto">
                                 </div>
 
                                 <div class="input-group" data-provides="fileinput">
