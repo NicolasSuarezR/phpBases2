@@ -23,7 +23,7 @@ switch ($action) {
             die( print_r( sqlsrv_errors(), true));
         }
         $sentencia="INSERT INTO Products(ProductID, ProductName, Price, ProductDescription, Imagen, Audio, Video ) 
-                VALUES ('3', '$txtNombre', 45.2700, 'Desn', 't1', 't2', 't3') ";
+                VALUES ('5', '$txtNombre', 445.2700, 'Desn', '1.png', 'Audio.mp3', 'Video.mp4') ";
         $f = sqlsrv_query($conn,$sentencia);
         print_r($f);
 
@@ -98,10 +98,11 @@ switch ($action) {
 
                             <div class="card-content">
                                 <div class="input-group">
-                                    <span class="input-group-addon">
+                                    <label class="input-group-addon" for="txtNombre">
                                         <i class="material-icons">inventory</i>
-                                    </span>
-                                    <input type="text" name="txtNombre" class="form-control" value="<?php echo $txtNombre;?>" placeholder="Nombre del producto">
+                                    </label>
+
+                                    <input type="text" id="txtNombre" class="form-control" value="<?php echo $txtNombre;?>" placeholder="Nombre del producto">
                                 </div>
 
                                 <div class="input-group" data-provides="fileinput">
